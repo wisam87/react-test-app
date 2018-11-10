@@ -1,40 +1,104 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="theme-color" content="#000000">
-    <!--
-      manifest.json provides metadata used when your web app is added to the
-      homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<!doctype html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <meta name="csrf-token" content="{{ csrf_token() }}">
+  
+  <title>React SRMS</title>
+  
+<!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>
-      You need to enable JavaScript to run this app.
-    </noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+  <link rel="stylesheet" href="/assets/plugins/morris/morris.css">
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+   <!-- App css -->
+  <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="/assets/css/icons.css" rel="stylesheet" type="text/css" />
+  <link href="/assets/css/style.css" rel="stylesheet" type="text/css" />
+  <script src="/assets/js/modernizr.min.js"></script>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+
+  <!-- DataTables -->
+  <link href="/assets/plugins/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+  <link href="/assets/plugins/datatables/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+  <!-- Responsive datatable examples -->
+  <link href="/assets/plugins/datatables/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+  <!-- Multi Item Selection examples -->
+  <link href="/assets/plugins/datatables/select.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+
+  <!-- form Uploads -->
+  <link href="/assets/plugins/fileuploads/css/dropify.min.css" rel="stylesheet" type="text/css" />
+
+
+
+  <!-- Stylesheets -->
+
+  <style>
+    .font-15 {
+      font-size: 14px !important;
+    }
+    .text-center {
+      text-align: center !important;
+    }
+    .padding-5 {
+      padding: 5px !important;
+    }
+    .txt-uppercase {
+      text-transform: uppercase !important;
+    }
+    .hover-red:hover {
+      color: red;
+    }
+    .hover-orange:hover {
+      color: orange;
+    }
+    .color-grey {
+      color: #D9D9D9 !important;
+    }
+    .fw-600 {
+      font-weight: 600;
+    }
+    .upload-file-box {
+      text-align: center; background-color: #FAFAFA; padding: 16px; border-radius: 5px; margin-left: 10px;
+    }
+    .upload-file-box:hover {
+       background-color: #C9C9C9; 
+    }
+    .min-height-155 {
+      min-height: 155px !important;
+    }
+  </style>
+
+</head>
+<body>
+
+<div class="fixed-left">
+
+  <div id="wrapper">
+  
+
+    <div id="root">
+      
+
+    </div>
+
+
+  </div>
+
+</div>
+
+<!-- application scripts -->
+
+<script>
+  $.ajaxSetup({
+    headers: {
+      'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+    }
+  });
+</script>
+
+
+</body>
 </html>
