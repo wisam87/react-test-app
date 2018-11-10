@@ -1,4 +1,12 @@
 import React, { Component } from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+
+import Dashboard from './pages/dashboard/Dashboard';
+import Pst from './pages/pst/Pst';
+
+import Content from './Content'
+import ContentPst from './ContentPst'
 
 /* An example React component */
 class Sidebar extends Component {
@@ -37,19 +45,22 @@ class Sidebar extends Component {
 
         			{/* SideMenu*/}
 					<div id="sidebar-menu">
-						<ul>
-							    <li>
-							        <a className="waves-effect"><i className="mdi mdi-view-dashboard"></i> <span>Dashboard</span> </a>
-							    </li>
 
-							    <li>
-							        <a className="waves-effect"><i className="mdi mdi-view-dashboard"></i> <span>PST</span> </a>
-							    </li>
+							<BrowserRouter>
+							
+							  
+							  <ul>
+						        <li><Link to='/'>Dashboard</Link></li>
+						        <li><Link to='/pst'>PST</Link></li>
+						      </ul>
 
-							       
-						</ul>
+							</BrowserRouter>
+
+
+
 					</div>
 
+					  
 
         			
 

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {withRouter} from 'react-router'
 
+
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom'
 
@@ -9,7 +10,7 @@ import Pst from './pages/pst/Pst'
 
 
 
-class Content extends Component {
+class ContentPst extends Component {
 
     render() {
         return (
@@ -18,7 +19,7 @@ class Content extends Component {
 		        <div class="content">
 			        <div class="container-fluid">
 			  
-			        	<p>This is Main Dashboard Content</p>
+			        	<p>Pst</p>
 
 					</div> 
 		        </div>
@@ -35,7 +36,7 @@ class Content extends Component {
     }
 }
  
-export default withRouter(Content);
+export default withRouter(ContentPst);
 
 
 

@@ -1,15 +1,10 @@
 import React, { Component } from 'react';
-import {withRouter} from 'react-router'
 
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom'
 
-import Dashboard from './pages/dashboard/Dashboard';
-import Pst from './pages/pst/Pst'
 
-
-
-class Content extends Component {
+class Pst extends Component {
 
     render() {
         return (
@@ -17,8 +12,9 @@ class Content extends Component {
         	<div class="content-page">    
 		        <div class="content">
 			        <div class="container-fluid">
-			  
-			        	<p>This is Main Dashboard Content</p>
+			        	
+
+			        	<p>This is PST</p>
 
 					</div> 
 		        </div>
@@ -35,8 +31,5 @@ class Content extends Component {
     }
 }
  
-export default withRouter(Content);
+export default Pst;
 
-
-
-		
