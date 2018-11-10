@@ -19,7 +19,7 @@ class Content extends Component {
 				          <BrowserRouter>
 				            <Switch>
 				              <Route path='/' component={DigiformText}/>
-				              <Route path='/pst' component={PSTtext}/>
+				              <Route path='pst' component={PSTtext}/>
 				            </Switch>
 				          </BrowserRouter>
 

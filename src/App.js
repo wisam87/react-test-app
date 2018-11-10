@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import Navbar from './containers/Navbar';
 import Sidebar from './containers/Sidebar';
-import Content from './containers/Content';
+import DashboardContent from './containers/Content';
 
 
 
@@ -15,7 +16,13 @@ class App extends Component {
         <Navbar/>
         <Sidebar/>
 
-        <Content/>
+      
+        <BrowserRouter>
+          <Switch>
+            <Route path='/' component={DashboardContent}/>
+          </Switch>
+        </BrowserRouter>
+        
       </div>
     );
   }

@@ -6,7 +6,7 @@ class Testtext extends Component {
         return (
 
         	<div>
-        		<p>This is Dashboards</p>
+        		<p>This is Main Dashboard Text</p>
         	</div>
 			
 				
