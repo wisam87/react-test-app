@@ -1,7 +1,8 @@
 ```sh
-git clone this repo
+git clone https://github.com/wisam87/react-test-app
 npm install
 npm start
-'''
+```
 
-Enjoy
+Okay!
+
