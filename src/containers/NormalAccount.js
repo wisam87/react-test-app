@@ -1,27 +1,24 @@
 import React, { Component } from 'react';
 import {withRouter} from 'react-router'
 
+
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom'
 
 import Dashboard from './pages/dashboard/Dashboard';
 import Pst from './pages/pst/Pst'
 
-import NormalAccount from './NormalAccount';
-import ContentPst from './ContentPst';
 
 
-class Content extends Component {
+class NormalAccount extends Component {
 
     render() {
         return (
 
-        	<main>
-			    <Switch>
-			      <Route exact path='/' component={NormalAccount}/>
-			      <Route path='/pst' component={ContentPst}/>
-			    </Switch>
-			  </main>
+        	<div>    
+		        <h1>This is NormalAccount</h1>
+
+	        </div>
 			
 				
 
@@ -29,7 +26,8 @@ class Content extends Component {
     }
 }
  
-export default withRouter(Content);
+export default NormalAccount;
 
 
 
+		

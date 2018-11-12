@@ -15,18 +15,8 @@ class ContentPst extends Component {
     render() {
         return (
 
-        	<div class="content-page">    
-		        <div class="content">
-			        <div class="container-fluid">
-			  
-			        	<p>Pst</p>
-
-					</div> 
-		        </div>
-
-		        <footer class="footer text-right">
-		        2018 - Share Registry Management System
-		        </footer>
+        	<div>    
+		        <h1>This is PST Content</h1>
 
 	        </div>
 			
@@ -36,7 +26,7 @@ class ContentPst extends Component {
     }
 }
  
-export default withRouter(ContentPst);
+export default ContentPst;
 
 
 
