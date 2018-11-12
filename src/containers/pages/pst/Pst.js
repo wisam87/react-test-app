@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 
-/* An example React component */
-class Pst extends Component {
-    render() {
-        return (
+
+const Pst = () => (
+  
             <div className="row">
                 <div className="col-xl-3 col-md-6">
                     <div className="card-box">
@@ -11,8 +10,7 @@ class Pst extends Component {
                     </div>
                 </div>
             </div>
-        );
-    }
-}
+            
+)
  
 export default Pst;
