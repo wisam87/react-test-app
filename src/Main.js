@@ -8,12 +8,27 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 class Main extends Component {
     render() {
         return (
-        	<div>
-            	<Switch>
-			      <Route exact path='/' component={Home}/>
-			      <Route path='/roster' component={Roster}/>
-    			</Switch>
-        	</div>
+        	
+
+            <div class="content-page">    
+                <div class="content">
+                    <div class="container-fluid">
+              
+                        <div>
+                            <Switch>
+                              <Route exact path='/' component={Home}/>
+                              <Route path='/roster' component={Roster}/>
+                            </Switch>
+                        </div>
+
+                    </div> 
+                </div>
+
+                <footer class="footer text-right">
+                2018 - Share Registry Management System
+                </footer>
+
+            </div>
         );
     }
 }
