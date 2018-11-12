@@ -1,35 +1,37 @@
 import React, { Component } from 'react';
-import {withRouter} from 'react-router'
-
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import { Link } from 'react-router-dom'
-
-import Dashboard from './pages/dashboard/Dashboard';
+// import Home from '../Home'
+import Dashboard from './pages/dashboard/Dashboard'
 import Pst from './pages/pst/Pst'
-
-import NormalAccount from './NormalAccount';
-import ContentPst from './ContentPst';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 
+/* An example React component */
 class Content extends Component {
-
     render() {
         return (
+        	
 
-        	<main>
-			    <Switch>
-			      <Route exact path='/' component={NormalAccount}/>
-			      <Route path='/pst' component={ContentPst}/>
-			    </Switch>
-			  </main>
-			
-				
+            <div class="content-page">    
+                <div class="content">
+                    <div class="container-fluid">
+              
+                        <div>
+                            <Switch>
+                              <Route exact path='/' component={Dashboard}/>
+                              <Route path='/pst' component={Pst}/>
+                            </Switch>
+                        </div>
 
+                    </div> 
+                </div>
+
+                <footer class="footer text-right">
+                2018 - Share Registry Management System
+                </footer>
+
+            </div>
         );
     }
 }
  
-export default withRouter(Content);
-
-
-
+export default Content;

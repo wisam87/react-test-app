@@ -1,22 +1,18 @@
 import React, { Component } from 'react';
 
-class PstText extends Component {
-
+/* An example React component */
+class Pst extends Component {
     render() {
         return (
-
-        	<div>
-        		<p>This is PST</p>
-        	</div>
-			
-				
-
+            <div className="row">
+                <div className="col-xl-3 col-md-6">
+                    <div className="card-box">
+                        <p>This is PST</p>
+                    </div>
+                </div>
+            </div>
         );
     }
 }
  
-export default PstText;
-
-
-
-		
+export default Pst;

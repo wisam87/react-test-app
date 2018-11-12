@@ -1,24 +1,13 @@
-import React, { Component } from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import { Link } from 'react-router-dom';
-
-import Dashboard from './pages/dashboard/Dashboard';
-import Pst from './pages/pst/Pst';
-
-import Content from './Content'
-import ContentPst from './ContentPst'
+import React from 'react';
+import { Link } from 'react-router-dom'
+import SideMenu from './SideMenu'
 
 /* An example React component */
-class Sidebar extends Component {
-
-    render() {
-        return (
-
-        	<div  className="left side-menu">
+const Sidebar = () => (
+ 
+  <div  className="left side-menu">
         		<div className="sidebar-inner slimscrollleft">
-
         			<div className="user-box" style={{paddingBottom: 0}}>
-
         				{/* Profile Picture */}
         				<div className="user-img">
 						    <img src="/assets/images/mse-box-new.png" alt="user-img" title="Mat Helme" class="rounded-circle img-thumbnail img-responsive" />
@@ -40,39 +29,13 @@ class Sidebar extends Component {
 						        </a>
 						    </li>
 						</ul>
-
         			</div>
 
-        			{/* SideMenu*/}
-					<div id="sidebar-menu">
-
-							<BrowserRouter>
-							
-							  
-							  <ul>
-						        <li><Link to='/'>Dashboard</Link></li>
-						        <li><Link to='/pst'>PST</Link></li>
-						      </ul>
-
-							</BrowserRouter>
-
-
-
-					</div>
-
-					  
-
-        			
-
-
+        			<SideMenu/>
 
         		</div>
         	</div>
 			
-				
-
-        );
-    }
-}
+)
  
 export default Sidebar;

@@ -1,22 +1,13 @@
 import React, { Component } from 'react';
 
-class Testtext extends Component {
-
+/* An example React component */
+class Dashboard extends Component {
     render() {
         return (
-
-        	<div>
-        		<p>This is Main Dashboard Text</p>
-        	</div>
-			
-				
-
+            <p>This is Main Dashboard</p>
+            
         );
     }
 }
  
-export default Testtext;
-
-
-
-		
+export default Dashboard;
