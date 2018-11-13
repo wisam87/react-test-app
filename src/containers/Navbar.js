@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-/* An example React component */
 class Navbar extends Component {
 
     render() {
@@ -35,7 +34,7 @@ class Navbar extends Component {
 			                        <div className="notification-box">
 			                            <ul className="list-inline mb-0">
 			                                <li>
-			                                    <a href="javascript:void(0);" className="right-bar-toggle">
+			                                    <a  className="right-bar-toggle">
 			                                        <i className="mdi mdi-bell-outline noti-icon"></i>
 			                                    </a>
 			                                    <div className="noti-dot">
