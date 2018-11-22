@@ -5,6 +5,8 @@ class Dashboard extends Component {
     render() {
         return (
             <p>This is Main Dashboard</p>
+
+            <h2>Display Fetch Data here</h2>
             
         );
     }
