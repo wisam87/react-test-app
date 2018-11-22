@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 // import Home from '../Home'
 import Dashboard from './pages/dashboard/Dashboard'
 import Pst from './pages/pst/Pst'
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import {  Switch, Route } from 'react-router-dom';
 
 
 /* An example React component */
